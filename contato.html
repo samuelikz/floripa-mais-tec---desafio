@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Floripa + TEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="conteudo">
+    <header>
+        <section class="linha">
+            <img src="./imagens/logo.png" alt="Logo da empresa" width="200px" />
+
+            <nav>
+                <ul>
+                    <li><a href="inicio.html" class="botao">Início</a></li>
+                    <li><a href="contato.html" class="botao botao-destaque">Contato</a></li>
+                </ul>
+            </nav>
+
+        </section>
+    </header>
+
+    <main class="agrupamento">
+        <section class="sobre linha">
+            <article>
+                <h1>Formulário de Contato</h1>
+                <h2>Preencha os dados e envie sua mensagem.</h2>
+            </article>
+
+            <form id="frmInscrincao" action="contato.php" method="post">
+                <fieldset>
+                    <legend>Dados de Contato</legend>
+                    <div>
+                        <label for="txtNome">Nome</label><br>
+                        <input class="entrada" type="text" id="txtNome" placeholder="Digite seu nome" maxlength="100" size="50"
+                            required /><br><br>
+                        <label>Sexo:</label><br>
+                        <input type="radio" id="rdoF" name="rdoSexo" value="F" required />
+                        <label for="rdoF">Femenino</label>
+                        <input type="radio" id="rdoM" name="rdoSexo" value="M" required />
+                        <label for="rdoM">Maculino</label><br><br>
+                        <label for="txtNome">Endereço</label><br>
+                        <input class="entrada" type="text" id="txtEndereco" placeholder="Ex: R Valdemor teixeira" maxlength="100"
+                            size="50" required /><br><br>
+                        <label>Estado:</label><br>
+                        <select class="entrada" id="cbxEstado" required="required">
+                            <option value="">--Selecione-</option>
+                            <option value="1">PE</option>
+                            <option value="2">MG</option>
+                            <option value="3">SC</option>
+                        </select><br><br>
+                        <label>Cidade:</label><br>
+                        <select class="entrada" id="cbxCidade" required="required">
+                            <option value="">--Selecione-</option>
+                            <option value="1">Recife</option>
+                            <option value="2">Belo Horizonte</option>
+                            <option value="3">Florianópolis</option>
+                        </select><br><br>
+                        <label>Celular:</label><br>
+                        <input class="entrada" type="tel" required="required" id="txtCelular" size="20" placeholder="(##) #####-####"
+                            maxlength="15"><br><br>
+                        <label>E-mail:</label><br>
+                        <input class="entrada" type="email" name="txtEmail" maxlength="100" size="50" placeholder="exemplo@site.com"
+                            required /><br><br>
+                        <label>Áreas de Interesse:</label><br>
+                        <input class="entrada" type="checkbox" value="HTML" id="chkHtml" name="chkAreasInteresse">
+                        <label>HTML</label>
+                        <input type="checkbox" value="CSS" id="chkCss" name="chkAreasInteresse">
+                        <label>CSS</label>
+                        <input type="checkbox" value="JavaScript" id="chkJavascript" name="chkAreasInteresse">
+                        <label>JavaScript</label><br><br>
+                        <label>Mensagem</label><br>
+                        <textarea class="entrada mensagem rotulo"name="mesagem" id="" cols="50" rows="5"></textarea>
+
+                    </div>
+                    <div class="linha">
+                        <input type="submit" class=" botao-destaque agrupamento-botao botao" value="Enviar" />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <ul class="linha">
+            <li>
+                <a href="#">
+                    <img src="./imagens/rede-twitter.png" alt="Twitter" width="40px">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./imagens/rede-facebook.png" alt="Facebook" width="40px">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./imagens/rede-instagram.png" alt="Instagram" width="40px">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
